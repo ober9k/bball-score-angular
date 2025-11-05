@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PlayersService } from './players.service';
 
 @Component({
   selector: 'app-players',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './players.component.css'
 })
 export class PlayersComponent {
+
+  private playersService = inject(PlayersService);
+
+  players = this.playersService.allPlayers;
 
 }

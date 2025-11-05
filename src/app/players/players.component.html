@@ -1,1 +1,11 @@
-<p>players works!</p>
+<h1>Players</h1>
+@if (players().length > 0) {
+  <ul>
+    @for (player of players(); track player.id) {
+      <li>{{ player.id }}: {{ player.name }}</li>
+    }
+  </ul>
+}
+@else {
+  <p>There are no players to show.</p>
+}

@@ -1,1 +1,11 @@
-<p>teams works!</p>
+<h1>Teams</h1>
+@if (teams().length > 0) {
+  <ul>
+    @for (team of teams(); track team.id) {
+      <li>{{ team.id }}: {{ team.name }}</li>
+    }
+  </ul>
+}
+@else {
+  <p>There are no teams to show.</p>
+}

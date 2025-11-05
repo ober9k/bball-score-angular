@@ -1,1 +1,11 @@
-<p>games works!</p>
+<h1>Games</h1>
+@if (games().length > 0) {
+  <ul>
+    @for (game of games(); track game.id) {
+      <li>{{ game.id }}</li>
+    }
+  </ul>
+}
+@else {
+  <p>There are no games to show.</p>
+}
