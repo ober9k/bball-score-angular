@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-teams',
-  standalone: false,
+  standalone: true,
   templateUrl: './teams.component.html',
   styleUrl: './teams.component.css'
 })

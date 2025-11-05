@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-games',
-  imports: [],
+  standalone: true,
   templateUrl: './games.component.html',
   styleUrl: './games.component.css'
 })
